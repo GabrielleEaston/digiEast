@@ -2,8 +2,9 @@
 
 ## Project Planning
 
-> – Image App that allows you to search differnt images and pin it to your Board
-> – When you click on Image it takes you to a new Image page to show the deatails.
+> – Digi East App : allows you to search different images from UnSplash Api and pin it to your Board
+> – When you click on Image it takes you to the Image page. 
+> – Image page shows the deatils about the Image 
 
 <br>
 
@@ -65,10 +66,10 @@ _The **Project Title** Digi East._
 
 > Use this section to list all supporting libraries and their role in the project.
 
-|     Library      | Description                                |
-| :--------------: | :----------------------------------------- |
-|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-|   Axios          | _Lorem ipsum dolor sit amet, consectetur._ |
+|     Library      |                                 
+| :--------------: | 
+|   React Router   | 
+|   Axios          | 
       
 
 <br>
@@ -104,7 +105,7 @@ src
 
 <br>
 
-#### Component Breakdown
+#### Component Breakdown 
 
 > Use this section to go into further depth regarding your components, including breaking down the components as stateless or stateful, and considering the passing of data between those components.
 
@@ -176,7 +177,7 @@ src
 
 | Error                                                   | Resolution                                             |
 | :------------------------------------------------------ | :----------------------------------------------------- |
-| `app.js:34 Uncaught SyntaxError: Unexpected identifier` | Missing comma after first object in sources {} object. |
+| 
 
 ***
 
