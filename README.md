@@ -18,29 +18,29 @@ _**Project Title** Digi East_
 
 > Use the Wireframes section to display desktop, tablet and mobile views.
 
-![Dummy Link](url)
+![Desktop LandPage](https://imgur.com/ushtl2w)
 
 - Desktop Landing
 
-![Dummy Link](url)
+![Desktop Image Page](https://imgur.com/tS959h9)
 
-- Desktop Body
+- Desktop Image
 
-![Dummy Link](url)
+![Dummy Link](https://imgur.com/ushtl2w)
 
-- Desktop Resource Index
+- Ipad Landing
 
-![Dummy Link](url)
+![Ipad Image Page](https://imgur.com/tS959h9)
 
-- Desktop Resource Show
+- Ipad imagePage
 
-![Dummy Link](url)
+![Dummy Link](https://imgur.com/2UBSKbt)
 
-- Tablet Resource Index
+- Mobile Landing
 
-![Dummy Link](url)
+![Dummy Link](https://imgur.com/WOPl65G)
 
-- Mobile Resource Index
+- Mobile Img Page
 
 <br>
 
