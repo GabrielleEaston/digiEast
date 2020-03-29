@@ -1,68 +1,182 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# **Digi East**
 
-## Available Scripts
+## Project Planning
 
-In the project directory, you can run:
+> – Image App that allows you to search differnt images and pin it to your Board
+> – When you click on Image it takes you to a new Image page to show the deatails.
 
-### `npm start`
+<br>
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Overview
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+_**Project Title** Digi East_
 
-### `npm test`
+<br>
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Wireframes
 
-### `npm run build`
+> Use the Wireframes section to display desktop, tablet and mobile views.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Dummy Link](url)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- Desktop Landing
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Dummy Link](url)
 
-### `npm run eject`
+- Desktop Body
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![Dummy Link](url)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Desktop Resource Index
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![Dummy Link](url)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Desktop Resource Show
 
-## Learn More
+![Dummy Link](url)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Tablet Resource Index
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Dummy Link](url)
 
-### Code Splitting
+- Mobile Resource Index
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+<br>
 
-### Analyzing the Bundle Size
+### MVP
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+> The Minimum Viable Product should be a well-planned and easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
 
-### Making a Progressive Web App
+_The **Project Title** Digi East._
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+<br>
 
-### Advanced Configuration
+####  MVP Goals
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+- Get a data from unspalsh Api when user enter a value in search Bar
+- Add button that allows the user add favorite image to the board
+- Clicking on image takes you to the ImageInfoPage to display the details about the image
+- Responsive design on 3 screens Desktop, Ipad and Mobile
+- Still debating between writing the tests vs component library
 
-### Deployment
+<br>
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+#### Libraries
 
-### `npm run build` fails to minify
+> Use this section to list all supporting libraries and their role in the project.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+|     Library      | Description                                |
+| :--------------: | :----------------------------------------- |
+|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
+|   Axios          | _Lorem ipsum dolor sit amet, consectetur._ |
+      
+
+<br>
+
+#### Data
+
+> Use the Data Section to define the API(s) you will be consuming for your project, inluding sample URL queries.
+
+|    API     | Quality Docs? | Website       | Sample Query                            |
+| :--------: | :-----------: | :------------ | :-------------------------------------- |
+| unSplashApi |      yes      | unspalsh.com | _https://api.unsplash.com/photos/_ |
+
+<br>
+
+#### Component Hierarchy
+
+> Use this section to define your React components and the data architecture of your app.
+
+```
+src
+|__ assets/
+      |__ images
+      |__ mockups
+|__ components/
+      |__ App.js
+      |__ Header.js
+      |__ SearchBar.js
+      |__ SearchResults.js
+      |__ PinBoard.js
+      |__ ImageInfoPage.js
+      |__ Footer.js
+```
+
+<br>
+
+#### Component Breakdown
+
+> Use this section to go into further depth regarding your components, including breaking down the components as stateless or stateful, and considering the passing of data between those components.
+
+|  Component   |    Type    | state | props | Description                                                      |
+| :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
+| Header       | functional |   n   |   n   | _The header will contain the navigation and logo._               |
+| App          |   class    |   y   |   n   | _Will make the api call and store the state._                    |
+| SearchBar    |   class    |   y   |   n   | _._      |
+| SearchResults|   class    |   y   |   n   | _._      |
+| Pin Board    |   class    |   n   |   y   | _._                 |
+| ImageInfoPage|   class    |   y   |   y   | _Will make an Api call ._                                        |
+| Footer       | functional |   n   |   n   | _The footer will show info about me._                             |
+
+<br>
+
+#### Component Estimates
+
+> Use this section to estimate the time necessary to build out each of the components you've described above.
+
+
+<br>
+
+> _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evalute possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
+
+<br>
+
+#### Helper Functions
+
+> 
+
+<br>
+
+### Post-MVP
+- Adding a like button for images
+- Adding Categories to the search
+- Displaying 10 popular images in a Featured Images section on the main page
+
+> 
+
+<br>
+
+
+- 
+<br>
+
+#### Post-MVP Data
+
+- 
+
+<br>
+
+***
+
+## Project Delivery
+
+> 
+
+### Code Showcase
+
+> 
+
+```
+
+```
+
+### Code Issues & Resolutions
+
+> Use this section to list of all major issues encountered and their resolution.
+
+| Error                                                   | Resolution                                             |
+| :------------------------------------------------------ | :----------------------------------------------------- |
+| `app.js:34 Uncaught SyntaxError: Unexpected identifier` | Missing comma after first object in sources {} object. |
+
+***
+

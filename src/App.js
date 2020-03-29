@@ -1,8 +1,36 @@
-import React from 'react';
+import React, {Component} from 'react';
 import logo from './logo.svg';
+import axios from 'axios';
 import './App.css';
 
-function App() {
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      imgs : []
+    }
+    
+ }
+  //Unspalsh api //////
+
+  componentDidMount() {
+   
+	axios
+		.get('https://api.unsplash.com/photos/?client_id=' + `${accessKey}`)
+		.then(data => {
+      this.setState({ imgs: data.data });
+      console.log(this.state.imgs);
+		})
+		.catch(err => {
+			console.log('Error happened during fetching!', err);
+		});
+}
+  
+  
+  
+  
+  
+  render() {  
   return (
     <div className="App">
       <header className="App-header">
@@ -22,5 +50,5 @@ function App() {
     </div>
   );
 }
-
+}
 export default App;
