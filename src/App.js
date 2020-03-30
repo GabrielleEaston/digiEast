@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import logo from './logo.svg';
+
 import axios from 'axios';
 import './App.css';
 
@@ -7,19 +7,26 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      imgs : []
+      images : []
     }
     
- }
-  //Unspalsh api //////
+  }
+ 
+  
+  //////////////////////Unsplash APi key///////
+  //search api
+ //https://api.unsplash.com/search/photos?query=london&client_id=
+  //https://api.unsplash.com/photos/?client_id=
 
-  componentDidMount() {
-   
+  ///////UnSplash api//////
+  /////////////////////
+componentDidMount() {
+ 
 	axios
 		.get('https://api.unsplash.com/photos/?client_id=' + `${accessKey}`)
 		.then(data => {
-      this.setState({ imgs: data.data });
-      console.log(this.state.imgs);
+      this.setState({ images: data.data });
+      console.log(this.state.images);
 		})
 		.catch(err => {
 			console.log('Error happened during fetching!', err);
@@ -28,27 +35,24 @@ class App extends Component {
   
   
   
-  
-  
   render() {  
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+   
+      let list = this.state.images.map(image => {
+        return(
+        <div>
+        <img src={image.urls.small} />
+        </div >
+      )
+    }
+   
+      )
+    return (
+      <>
+        <div className="grid">
+          {list}
+        </div>
+        </>
+)
 }
 }
 export default App;

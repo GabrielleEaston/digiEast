@@ -1,5 +1,5 @@
 # **Digi East**
-![feeling](https://media.giphy.com/media/elCPRsF0NMVQTf40Bw/giphy.gif)
+![star wars](http://gph.is/1uG6VuR)
 ## Project Planning
 
 > – Digi East App : allows you to search different images from UnSplash Api and pin it to your Board
@@ -82,7 +82,7 @@ _The **Project Title** Digi East._
 |    API     | Quality Docs? | Website       | Sample Query                            |
 | :--------: | :-----------: | :------------ | :-------------------------------------- |
 | unSplashApi |      yes      | unspalsh.com | _https://api.unsplash.com/photos/_ |
-
+|unSplashApi  |      yes      |unsplash.com/documentation#search-photos|    https://api.unsplash.com/search/photos?query={input}&client_id=     |
 <br>
 
 #### Component Hierarchy
