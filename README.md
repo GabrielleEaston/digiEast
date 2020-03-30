@@ -1,5 +1,5 @@
 # **Digi East**
-![gif](https://media.giphy.com/media/Ov5NiLVXT8JEc/giphy.gif)
+![feeling](https://media.giphy.com/media/elCPRsF0NMVQTf40Bw/giphy.gif)
 ## Project Planning
 
 > – Digi East App : allows you to search different images from UnSplash Api and pin it to your Board
