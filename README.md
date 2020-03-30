@@ -1,5 +1,5 @@
 # **Digi East**
-![star wars](http://gph.is/1uG6VuR)
+![star wars](http://gph.is/1uG6VuR.gif)
 ## Project Planning
 
 > – Digi East App : allows you to search different images from UnSplash Api and pin it to your Board
