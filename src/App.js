@@ -1,8 +1,11 @@
 import React, {Component} from 'react';
 import axios from 'axios';
+import { Route, Link } from "react-router-dom";
 import SearchBar from './components/SearchBar/SearchBar';
 import SearchResults from './components/SearchResults/SearchResults';
 import PinBoard from './components/PinBoard/PinBoard';
+import Footer from './components/Footer/Footer';
+import ImageDetails from './components/ImageDetails/ImageDetails';
 import './App.css';
 
 class App extends Component {
@@ -67,23 +70,35 @@ class App extends Component {
       <div>
         <header>
         <h1>Digi East</h1>
-          <h3>Home</h3>
+         <Link to="/"><h3>Home</h3></Link>
           </header>
         <div className="App">
           <SearchBar handleTermChange={this.handleTermChange} submit={this.handleSubmit}/>
 
           <div className="container">
             {this.state.images && 
-              <SearchResults searchResults={this.state.images} addPhoto={this.addPhoto} isRemoval={false}/>}
+              <Route  exact path='/' render={()=>(
+              <SearchResults searchResults={this.state.images} addPhoto={this.addPhoto} isRemoval={false}/>)}/>}
 
             <PinBoard boardName={this.state.pinBoardName} nameChange={this.updatePinBoardName} pinBoard={this.state.pinBoard}
-              addPhoto={this.addPhoto} removePhoto={this.removePhoto} isRemoval={true}/>
+               removePhoto={this.removePhoto} isRemoval={true}/>
 
-
+            
           </div>
         </div>
+        <Route path="/image/:photoId" render={(props) => (
+          <ImageDetails photos={this.state.images}  {...props}/>
+           )} />
+           <Footer />
       </div>
     );
   }
 }
 export default App;
+
+{/* <Route exact path='/' render={() => (
+  <SearchResults searchResults={this.state.images} />
+)}/> */}
+
+{/* <Route path="/show/:birdName" render={(props) =>(
+  <Show birds={this.state.birds} {...props}/> )}/> */}
