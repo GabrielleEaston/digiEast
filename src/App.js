@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import { Route, Link } from "react-router-dom";
-import SearchBar from './components/SearchBar/SearchBar';
-import SearchResults from './components/SearchResults/SearchResults';
-import PinBoard from './components/PinBoard/PinBoard';
+// import SearchBar from './components/SearchBar/SearchBar';
+// import SearchResults from './components/SearchResults/SearchResults';
+// import PinBoard from './components/PinBoard/PinBoard';
+import HomePage from './components/HomePage/HomePage';
 import Footer from './components/Footer/Footer';
 import ImageDetails from './components/ImageDetails/ImageDetails';
 import './App.css';
@@ -71,8 +72,14 @@ class App extends Component {
         <header>
         <h1>Digi East</h1>
          <Link to="/"><h3>Home</h3></Link>
-          </header>
+        </header>
         <div className="App">
+          {this.state.images &&
+            <Route exact path='/' render={() => (
+              <HomePage handleTermChange={this.handleTermChange} submit={this.handleSubmit} searchResults={this.state.images} addPhoto={this.addPhoto}
+                boardName={this.state.pinBoardName} nameChange={this.updatePinBoardName} pinBoard={this.state.pinBoard}
+                removePhoto={this.removePhoto} />)}/>}
+        {/* <div className="App">
           <SearchBar handleTermChange={this.handleTermChange} submit={this.handleSubmit}/>
 
           <div className="container">
@@ -88,7 +95,11 @@ class App extends Component {
         </div>
         <Route path="/image/:photoId" render={(props) => (
           <ImageDetails photos={this.state.images}  {...props}/>
+           )} /> */}
+           <Route path="/image/:photoId" render={(props) => (
+          <ImageDetails photos={this.state.images}  {...props}/>
            )} />
+          </div>
            <Footer />
       </div>
     );
