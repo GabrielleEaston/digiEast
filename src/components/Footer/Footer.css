@@ -1,0 +1,25 @@
+footer{
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding-bottom: 2%;
+  padding-top: 0.5%;
+  font-family: 'Raleway', sans-serif;
+}
+
+footer img {
+  width: 30px;
+  display: inline-block;
+  padding: 10px;
+
+}
+footer p{
+  font-size: 1.1rem;
+  padding-bottom: 1%;
+  font-family: 'Cutive Mono', monospace;
+}
+footer span, footer small{
+font-style: italic;
+font-size: 1rem;
+font-family: 'Cutive Mono', monospace;
+}

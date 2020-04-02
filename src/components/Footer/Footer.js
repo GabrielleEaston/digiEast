@@ -1,13 +1,17 @@
 import React from 'react';
 import './Footer.css';
+import github from './github.png';
+import logo from '../assets/logo.png';
 
 function Footer() {
 
-  return (<>
-    <a href="https://github.com/GabrielleEaston/digiEast">githubIcon</a>
-    <p>Build with React| Unsplash API used for images and description</p>
+  return (<footer>
+    <img src={logo} alt="logo"></img>
+    <a href="https://github.com/GabrielleEaston/digiEast"><img src={github}></img></a>
+    <p>Build with React| Unsplash API </p>
+    <small>Using jest enzyme testing</small>
     <span>©2019 by Gabrielle Easton</span>
-  </>
+  </footer>
   );
 }
 

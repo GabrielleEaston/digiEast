@@ -8,17 +8,21 @@ class ImageDetails extends Component {
   render() {
     return (
       <>
-        <h1>Image Details Page</h1>
+       
         {this.props.photos.filter(photo => (
           photo.id === this.props.match.params.photoId
         )).map(photo => (
-          <>
+          <div className="flex-container">
             <img src={photo.urls.regular} alt={photo.alt_description} />
+            <div className="info">
+              <h5>Enjoy the photo</h5>
+              <p>{photo.alt_description}</p>
             <p>{photo.description}</p>
-            <p>{photo.created_at}</p>
-            <p>Likes: {photo.likes}</p>
-            <a href={photo.links.download} target="_blank">Open in a separate window</a>
-          </>
+            <p>Photo created at {photo.created_at}</p>
+              <p>{photo.likes} likes</p>
+             <a href={photo.links.download}>Full resolution photo</a>
+            </div>
+          </div>
         ))}
       </>
     )

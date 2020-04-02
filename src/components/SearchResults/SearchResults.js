@@ -8,18 +8,20 @@ class SearchResults extends Component {
   render() {
     return (
       <div className="SearchResults">
-        <h2>Results</h2>
+        
+        <div className="grid">
         {this.props.searchResults.map((photo, idx) => {
           return (
-            <div key={idx}>
+            <div key={idx} className="border-image">
               <Link to={`/image/${photo.id}`}>
               <img src={photo.urls.regular} id={photo.id} alt={photo.alt_description} /></Link>
-              <p>{photo.description}</p>
-              <button onClick={()=>this.props.addPhoto(photo)}>+</button>
+              {/* <p>{photo.description}</p> */}
+              <button className="action" onClick={()=>this.props.addPhoto(photo)}>+</button>
             </div>
           )
         })}
-      </div>
+        </div>
+        </div>
     )
   }
 }

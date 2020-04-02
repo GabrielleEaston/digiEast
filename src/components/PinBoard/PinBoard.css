@@ -3,11 +3,12 @@
   flex-direction: column;
   align-items: center;
   overflow-y: scroll;
-  width: 37%;
+  width: 40%;
   max-height: 950px;
   padding: 2.27rem 1.16rem;
   background-color: rgba(1, 12, 63, 0.447);
   box-shadow: 0 4px 2px 2px #000000;
+  text-align: center;
 }
 
 .PinBoard input {
@@ -22,8 +23,21 @@
 .PinBoard div img {
   width: 200px;
   height: 200px;
+  object-fit: contain;
+}
+.action {
+  cursor: pointer;
+  padding: .5rem;
+  font-size: 1.05rem;
+  transition: color .25s;
+  border: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
 }
 
+.action:hover {
+  color: rgba(265, 265, 265, .5);
+}
 ::-webkit-scrollbar {
     width: 0px;
     background: transparent;

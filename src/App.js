@@ -9,6 +9,7 @@ import Footer from './components/Footer/Footer';
 import ImageDetails from './components/ImageDetails/ImageDetails';
 import './App.css';
 
+
 class App extends Component {
   constructor() {
     super();
@@ -70,6 +71,7 @@ class App extends Component {
     return (
       <div>
         <header>
+         
         <h1>Digi East</h1>
          <Link to="/"><h3>Home</h3></Link>
         </header>
@@ -107,9 +109,3 @@ class App extends Component {
 }
 export default App;
 
-{/* <Route exact path='/' render={() => (
-  <SearchResults searchResults={this.state.images} />
-)}/> */}
-
-{/* <Route path="/show/:birdName" render={(props) =>(
-  <Show birds={this.state.birds} {...props}/> )}/> */}

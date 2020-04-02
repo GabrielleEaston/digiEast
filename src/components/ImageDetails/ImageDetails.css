@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Major+Mono+Display&family=Raleway:wght@400;500;600&display=swap');
+
+
+
+
+img{
+  display: block;
+  max-width: 100%;
+}
+.flex-container{
+  display: flex;
+  max-width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  color: black;
+  padding-top: 7%;
+}
+.flex-container img {
+  /* margin-top: 5%; */
+  width: 30%;
+  border-radius: 3%;
+  object-fit: contain;
+  max-height: 100%;
+  
+}
+.info a{
+  display: block;
+  margin-top: 1%;
+  text-decoration: none;
+  border: 1px solid white;
+  cursor: pointer;
+  padding: .77rem .77rem;
+  background-color: #7e8ed7;
+  text-align: center;
+  font-size: .833rem;
+  color: white;
+  font-weight: 500;
+}
+.info a:hover{
+  background-color: #35125e;
+}
+.info{
+  width: 50%;
+}
+
+.info h5{
+  text-align: center;
+  font-family: 'Major Mono Display', monospace;
+}
+.info p{
+  font-family: 'Cutive Mono', monospace;
+}
+
