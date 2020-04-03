@@ -4,7 +4,7 @@
 
 > – Digi East App : allows you to search different images from UnSplash Api and pin it to your Board
 > – When you click on Image it takes you to the Image page. 
-> – Image page shows the deatils about the Image 
+> – Image page shows the details about the Image 
 
 <br>
 
@@ -59,7 +59,7 @@ _The **Project Title** Digi East._
 - Add button that allows the user add favorite image to the board
 - Clicking on image takes you to the ImageInfoPage to display the details about the image
 - Responsive design on 3 screens Desktop, Ipad and Mobile
-- Still debating between writing the tests vs component library
+- Jest enzyme tests 
 
 <br>
 
@@ -81,8 +81,7 @@ _The **Project Title** Digi East._
 
 |    API     | Quality Docs? | Website       | Sample Query                            |
 | :--------: | :-----------: | :------------ | :-------------------------------------- |
-| unSplashApi |      yes      | unspalsh.com | _https://api.unsplash.com/photos/_ |
-|unSplashApi  |      yes      |unsplash.com/documentation#search-photos|    https://api.unsplash.com/search/photos?query={input}&client_id=     |
+|unSplashApi |      yes      |unsplash.com   | https://api.unsplash.com/search/photos?query={input}&client_id=|
 <br>
 
 #### Component Hierarchy
@@ -91,16 +90,13 @@ _The **Project Title** Digi East._
 
 ```
 src
-|__ assets/
-      |__ images
-      |__ mockups
 |__ components/
       |__ App.js
-      |__ Header.js
+      |__ HomePage.js
       |__ SearchBar.js
       |__ SearchResults.js
       |__ PinBoard.js
-      |__ ImageInfoPage.js
+      |__ ImageDetails.js
       |__ Footer.js
 ```
 
@@ -114,11 +110,11 @@ src
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
 | Header       | functional |   n   |   n   | _The header will contain the navigation and logo._               |
 | App          |   class    |   y   |   n   | _Will make the api call and store the state._                    |
-| SearchBar    |   class    |   y   |   n   | _._      |
-| SearchResults|   class    |   y   |   n   | _._      |
-| Pin Board    |   class    |   n   |   y   | _._                 |
-| ImageInfoPage|   class    |   y   |   y   | _Will make an Api call ._                                        |
-| Footer       | functional |   n   |   n   | _The footer will show info about me._                             |
+| SearchBar    |   class    |   n   |   y   | _._                                                              |
+| SearchResults|   class    |   n   |   y   | _._                                                              |
+| Pin Board    |   class    |   n   |   y   | _._                                                              |
+| ImageDeatils |   class    |   n   |   y   | _renders the details of the image._                              |
+| Footer       | functional |   n   |   n   | _The footer will show info about me._                            |
 
 <br>
 
@@ -143,6 +139,8 @@ src
 - Adding a like button for images
 - Adding Categories to the search
 - Displaying 10 popular images in a Featured Images section on the main page
+- Local Storage for PinBoard collection
+
 
 > 
 
