@@ -17,9 +17,10 @@ class ImageDetails extends Component {
             <div className="info">
               <h5>Enjoy the photo</h5>
               <p>{photo.alt_description}</p>
-            <p>{photo.description}</p>
-            <p>Photo created at {photo.created_at}</p>
-              <p>{photo.likes} likes</p>
+              <div>
+              <p>{photo.description}</p></div>
+              <p>Photo created at {photo.created_at}</p>
+               <p>{photo.likes} likes</p>
              <a href={photo.links.download}>Full resolution photo</a>
             </div>
           </div>

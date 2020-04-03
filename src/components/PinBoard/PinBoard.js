@@ -11,15 +11,17 @@ class PinBoard extends Component {
   render() {
     return (
       <div className="PinBoard">
+        <div className="mobile-wrapper">
         <input className="input" value={this.props.boardName} onChange={this.handleNameChange} />
         {this.props.pinBoard.map(pinPhoto => {
           return <div>
 
             <img src={pinPhoto.urls.small} alt="placeholder" />
-            <button className="action" onClick={() => this.props.removePhoto(pinPhoto)}>-</button>
+            <button className="action" onClick={() => this.props.removePhoto(pinPhoto)}>- remove</button>
 
           </div>
         })}
+          </div>
       </div>
     );
   }

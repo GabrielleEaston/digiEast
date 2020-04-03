@@ -63,3 +63,11 @@ header h3:hover{
 
 /* font-family: 'Raleway', sans-serif;
 font-family: 'Major Mono Display', monospace; */
+
+@media only screen and (max-width:660px) {
+  .container{
+    flex-direction: column-reverse;
+  }
+
+ 
+}

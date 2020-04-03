@@ -16,7 +16,7 @@ class SearchResults extends Component {
               <Link to={`/image/${photo.id}`}>
               <img src={photo.urls.regular} id={photo.id} alt={photo.alt_description} /></Link>
               {/* <p>{photo.description}</p> */}
-              <button className="action" onClick={()=>this.props.addPhoto(photo)}>+</button>
+              <button className="action" onClick={()=>this.props.addPhoto(photo)}>+ add</button>
             </div>
           )
         })}
