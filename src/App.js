@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
 import { Route, Link } from "react-router-dom";
-
 import HomePage from "./components/HomePage/HomePage";
 import Footer from "./components/Footer/Footer";
 import ImageDetails from "./components/ImageDetails/ImageDetails";
