@@ -4,9 +4,8 @@ import { Route, Link } from "react-router-dom";
 import HomePage from "./components/HomePage/HomePage";
 import Footer from "./components/Footer/Footer";
 import ImageDetails from "./components/ImageDetails/ImageDetails";
-
 import "./App.css";
-import ScrollToTop from "./components/ScrollToTop";
+
 
 class App extends Component {
   constructor() {
