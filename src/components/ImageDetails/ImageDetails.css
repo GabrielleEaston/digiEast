@@ -17,9 +17,10 @@ img {
 }
 .flex-container img {
   width: 40%;
-  border-radius: 1%;
   object-fit: contain;
   max-height: 100%;
+  background: #fff;
+  padding: 1em;
 }
 .info a {
   display: block;
