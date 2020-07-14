@@ -4,7 +4,6 @@ import './SearchBar.css';
 
 class SearchBar extends Component {
   
-
   render() {
     return (
       <div className="SearchBar">

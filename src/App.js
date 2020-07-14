@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import axios from "axios";
 import { Route, Link } from "react-router-dom";
-// import SearchBar from './components/SearchBar/SearchBar';
-// import SearchResults from './components/SearchResults/SearchResults';
-// import PinBoard from './components/PinBoard/PinBoard';
+
 import HomePage from "./components/HomePage/HomePage";
 import Footer from "./components/Footer/Footer";
 import ImageDetails from "./components/ImageDetails/ImageDetails";
+
 import "./App.css";
+import ScrollToTop from "./components/ScrollToTop";
 
 class App extends Component {
   constructor() {
